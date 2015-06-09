@@ -1,0 +1,71 @@
+\begin{longtable}{p{0.5\textwidth} p{0.5\textwidth}}
+  \tablesection{Chapter 5: Energy}
+  \tablesubsection{Work}
+
+  \(W = Fd\) & The basic definition of work $W$ which is a force $F$ applied across a distance $d$, measured in Joules $\si{\joule}=\si{\newton\meter}=\si{\kilo\gram\meter\squared\per\second\squared}$ \\
+  \(W = \vec{F}_x\Delta\vec{x}\) & A more specific definition of work for a force $\vec{F}_x$ in the $x$-direction. The same holds true for the $y$- and $z$-directions \\
+  \(W = \left(F\cos\theta\right)d\) & The work done by a constant force during a linear displacement $d$ where the force is applied in a direction not parallel to the direction of motion in plane $d$. Because the component of the force not operating in a direction parallel to the direction of motion (e.g., force operating in the $y$-direction if the object is moving in the $x$-direction), the force is not contributing to the motion, and thus produces \SI{0}{\joule} of work \\
+  \(W_{net} = F_{net}\Delta x = \left(ma\right)\Delta x = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2\) & Yields net work $W_{net}$ \\
+
+  \notabene{Work is done only by the part of the force acting in parallel to the object's direction of motion--thus, we can ignore the $y$-component of the force in this equations as it is irrelevant to the actual work performed. Work is a scalar quantity (as is energy and energy transfer), which means there is no direction associated with the quantity. The displacement $\Delta\vec{x}$, however, is a vector quantity, even if it is limited to one dimension in the linear formula $W = {F_x}{\Delta x}$ (it has two directions, $+\Delta x$ and $-\Delta x$). When the $x$-component of the force $\vec{F}$ and the displacement $\Delta \vec{x}$ share signs, the work performed is positive; when one of the two is negative, however, the work done is negative (this makes sense, of course, because a negative number multiplied by a negative number becomes positive). If work is negative, then the object loses mechanical energy. Work is performed by \textit{something} upon \textit{something else}; it doesn't happen by itself, isolated.}
+
+  \tablesubsection{Potential and Kinetic Energy and the Work-Energy Theorem}
+
+  \(KE\equiv\frac{1}{2}mv^2\) & Yields the kinetic energy $KE$, measured in Joules \si{\joule} \\
+  \(v = \displaystyle\sqrt{2\frac{KE}{m}}\) & A derivation of velocity $v$ based on the formula for kinetic energy $KE$ \\
+  \(W_{net} = KE_f - KE_i = \Delta KE\) & The work-energy theorem \\
+  \(W_{net} = W_{nc} + W_g = \Delta KE\) & An alternate definition of the work-energy theorem \\
+  \(W_{nc} = \Delta KE - W_c\) & Yields nonconservative work $W_{nc}$ where $W_c$ is conservative work \\
+  \(W_{nc} = \Delta KE + W_g\) & An alternate definition of nonconservative work \\
+  \(W_g = -mg\left(y_f - y_i\right)=-mg\Delta\vec{y}\) & Yields gravitational work $W_g$ where $d=\Delta\vec{y}$ and $\vec{F}$ are both pointing downwards (e.g., in the direction of the vector force of gravity) \\
+  \(PE_g\equiv mgy\) & Yields gravitational potential energy where $y$ is the vertical position of mass $m$ relative to the surface of the earth, measured in Joules \\
+  \(W_g = -\left(PE_f - PE_i\right) = -\left(mgy_f - mgy_i\right)\) & The relationship between gravitational work and gravitational potential energy \\
+  \(v_f = \sqrt{\frac{2F_{net}d}{m} + v_i^2} = \sqrt{\frac{2W_{net}}{m} + v_i^2} = \sqrt{2gh + v_i^2} \) & This is how we arrive at the Work-Energy Theorem, \(W = \frac{1}{2}mv^2\), from the equation \(v_f^2 = v_i^2 + 2ad\) \\
+  
+  \notabene{A force is {\it conservative} if the work it does moving an object between two points is the same no matter what path is taken. This contrasts with {\it nonconservative} forces, like the force of friction, which gives off some energy as heat.}
+
+  \tablesubsection{Conservation of Energy}
+
+  \(KE_i + PE_i = KE_f + PE_f\) & The law of conservation of energy, assuming all nonconservative forces are absent $\left(W_{nc}=0\right)$ \\
+  \(E = KE + PE\) & Conservation of mechanical energy \\
+  \(\frac{1}{2}mv_i^2 + mgy_i = \frac{1}{2}mv_f^2 + mgy_f\) & Conservation of mechanical energy if the force of gravity is the only force doing work within a system \\
+
+  \tablesubsection{Hooke's Law and Springs}
+
+  \(F_s = -kx\) & Hooke's Law, where $k$ is the spring constant in \si{\newton\per\meter} \\
+  \(x = \displaystyle\frac{F_s}{k}\) & Yields $x$, the distance by which a spring has been displaced from its origin in meters \\
+  \(\bar{F} = \displaystyle\frac{-kx}{2}\) & The average force exerted by a spring \\
+  \(W_s = \bar{F}x = -\frac{1}{2}kx^2\) & Yields the work done by the spring force $F_s$ \\
+  \(W_x = -\left(\frac{1}{2}kx_f^2 - \frac{1}{2}kx_i^2\right)\) & In general, when the spring is stretched or compressed from $x_i$ to $x_f$, the work done by the spring is $W_x$ \\
+  \(W_{nc} - W_x = \Delta KE + \Delta PE_g\) & A redefinition of the Work-Energy Theorem including $W_x$, the work done by a spring displaced by $x$ \\
+  \(W_f=\left(-\mu_kmg\right)d\) & Yields the work done by the force of kinetic friction on a flat surface \\
+
+  \notabene{The force $F_s$ is a restoring force, because the spring always exerts this force in a direction opposite the displacement of its end, tending to restore whatever is attached to the spring to its equilibrium position}
+
+  \tablesubsection{Spring Potential Energy}
+
+  \(PE_s \equiv \frac{1}{2}kx^2\) & Yields the potential energy of a spring in Joules \si{\joule} \\
+  \(W_{nc} = \Delta KE + \Delta PE_g + \Delta PE_s\) & A redefinition of the Work-Energy Theorem including spring potential energy $PE_s$ \\
+  \(\left(KE + PE_g + PE_s\right)_i = \left(KE + PE_g + PE_s\right)_f\) & An extended form for the conservation of mechanical energy in the absence of nonconservative forces $\left(W_{nc}=0\right)$ \\
+  \(W_{F_{s}} = \frac{1}{2}kx_f^2\) & Yields the work due to a spring $W_{F_{s}}$ with a maximum displacement of $x_f$ \\
+
+  \tablesubsection{Systems and Energy Conservation}
+
+  \(W_{nc} + W_c = \Delta KE\) & The basic form of the Work-Energy Theorem \\
+  \(W_{nc} = \Delta KE + \Delta PE\) & An alternate form of the Work-Energy Theorem \\
+  \(E = KE + PE\) & Formula for the conservation of mechanical energy $E$ \\
+  \(W_{nc} = \Delta E\) & Another form of the Work-Energy Theorem relating work done by nonconservative forces $W_{nc}$ to the change in mechanical energy $\Delta E$ \\
+
+  \tablesubsection{Power}
+
+  \(\bar{P} = \displaystyle\frac{W}{\Delta t} = \frac{F\Delta x}{\Delta t} = F\ddot{v}\cos\theta\) & Yields the average power $\bar{P}$ delivered to an object by an external force, measured in Watts $\si{\watt}=\si{\joule\per\second}$ where $\ddot{v}$ is $\frac{dx}{dt}$ and $\theta$ is the angle between the vector of the applied force and the velocity vector of the object being acted upon \\
+  \(P = Fv\) & Yields instantaneous power, a more general definition of the formula for average power $\bar{P}$ \\
+  \(P=Fv\cos\theta\) & Another form of the formula for instantaneous power \\
+
+  \notabene{See \textit{Appendix I} on page \pageref{ssec:varying_force_work} for information on the work done by a varying force}
+
+\end{longtable}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

@@ -1,0 +1,208 @@
+\documentclass[11pt,letterpaper]{article}%another class might be appropriate, but I'm most familiar with article
+
+%PACKAGES 
+%\usepackage[english]{babel}     <--why don't we use these?
+%\usepackage[utf8x]{inputenc}
+\usepackage{siunitx}%si unit typesetting
+\usepackage{amsmath}%math typesetting stuff
+\usepackage{fancyhdr}%header & footer stuff
+\usepackage{cancel}%for canceling out stuff in formulae
+\usepackage[margin=1in]{geometry}%page margins & stuff
+\usepackage{microtype}
+
+\usepackage{url}%nice url typesetting
+\usepackage{textcomp}%used for \textrangle & similar--adds symbols for text environment
+\usepackage{graphicx}%for pictures and stuff
+
+\usepackage{multicol}%multicolumn stuff in tables
+\usepackage{booktabs}%adds additional table commands (\toprule, etc.)
+\usepackage{longtable}%handles tables spanning multiple pages
+
+\usepackage{hyperref}%adds pdf hyperlinks for document references (e.g., table of contents)
+\usepackage{tikz}%for drawing graphics
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, decorations.pathreplacing,calc}%tikz libraries required for graphics
+\usepackage{tkz-euclide}%programmatically labelling angles in tikz
+\usepackage{amssymb}%additional math symbols like 'therefore'
+\usetkzobj{all}%from tkz-euclide
+\usepackage{pgfplots}%for graphing functions in tikz
+\usepgfplotslibrary{fillbetween}%for filling curve area in pgfplots
+\usepackage{authblk}%changes the way \author{} works, adds \affiliation{} & similar
+\usepackage[version=4]{mhchem}%chemical typesetting package
+
+%SIUNITX STUFF
+\let\DeclareUSUnit\DeclareSIUnit
+\let\US\SI
+\let\us\si%means of differentiating US and SI units while remaining within the bounds of siunitx
+%us unit declarations
+\DeclareUSUnit\inch{in}
+\DeclareUSUnit\foot{ft}
+\DeclareUSUnit\pound{lb}
+\DeclareUSUnit\mile{mi}
+\DeclareUSUnit\gallon{gal}
+\DeclareUSUnit\horsepower{hp}
+\DeclareUSUnit\britishthermalunit{Btu}%british thermal unit
+\DeclareUSUnit\slug{slug}
+%si unit declarations
+\DeclareSIUnit\atmosphere{atm}
+\DeclareSIUnit\year{y}
+\DeclareSIUnit\lightspeed{c}
+\DeclareSIUnit\lightyear{ly}
+\DeclareSIUnit\dyne{dyn}
+\DeclareSIUnit\ergon{erg}
+\DeclareSIUnit\calorie{cal}
+\DeclareSIUnit\revolution{rev}
+\DeclareSIUnit\gauss{G}
+\DeclareSIUnit\curie{Ci}
+\DeclareSIUnit\becquerel{Bq}
+%siunitx setup stuff
+\sisetup{inter-unit-product = \cdot}%on overleaf this must be $\cdot$ but locally (and on sharelatex) this must be \cdot. I'm not sure why, but errors occur otherwise
+%\sisetup{per-mode = fraction}
+\sisetup{per-mode = symbol}%choose one or the other
+%END SIUNITX STUFF
+
+%HEADER & FOOTER STUFF
+\pagestyle{fancy}
+\setlength{\headheight}{14.49998pt}
+\lhead{Physics Formula Sheet}
+\rhead{Contents}
+\lfoot{$\cdot$~\thepage~$\cdot$}
+\cfoot{}%suppresses page numbers for pages in fancy style
+\rfoot{\lcp}%adds read-only document link
+\renewcommand{\headrulewidth}{0.4pt}%header line width
+\renewcommand{\footrulewidth}{0pt}%footer line length
+\renewcommand{\arraystretch}{1.5}%modifies line spacing in tabular environments
+%END HEADER & FOOTER STUFF
+
+
+%NEW COMMANDS
+\providecommand{\e}[1]{%scientific notation command
+  \ensuremath{\times 10^{#1}}
+}
+\newcommand{\abs}[1]{%absolute value command
+  \ensuremath{\left|#1\right|}
+}
+\newcommand{\lcp}{%provides shareable doc link
+  Permalink: \url{https://www.sharelatex.com/project/556ccc7739bfe35b1d22996a}
+}
+\newcommand{\tablesection}[1]{%new section in 2-column table
+  \rhead{#1}
+  \addcontentsline{toc}{section}{#1} \\[-1cm]
+  \toprule
+  \multicolumn{2}{l}{#1} \\
+  \midrule 
+}
+
+\newcommand{\tablesubsection}[1]{%new subsection in 2-column table
+  \addcontentsline{toc}{subsection}{#1} \\[-1mm]
+  \cmidrule(r){1-2}
+  \multicolumn{2}{c}{#1} \\
+  \cmidrule(r){1-2}
+}
+
+\newcommand{\notabene}[1]{%use to add multicolumn notes & stuff for a 2-column table
+  \multicolumn{2}{c}{
+    \begin{minipage}[t]{\textwidth}
+      \textbf{N.B.} {#1}
+    \end{minipage}} \\
+}
+\newcommand{\email}[1]{%used to typeset emails in the 'title settings' section
+	$\langle$\href{mailto:#1}{\nolinkurl{#1}}$\rangle$
+}
+\newcommand{\bfrac}[2]{%use to make bar-less fractions
+  \genfrac{(}{)}{0pt}{}{#1}{#2}
+}
+%END NEW COMMANDS
+
+
+%DOCUMENT TITLE & AUTHOR SETTINGS
+\title{Formula and General Information Sheet \\ \large{AP Physics I \& II}}
+\author{Charles German}\affil{Bridgewater College, \email{cgerman@eagles.bridgewater.edu}}
+\author{Richard Shaw}\affil{University of Virginia, \email{rcs8vq@virginia.edu}}
+\author{David Robie}\affil{Virginia Commonwealth University, \email{robiedr@mymail.vcu.edu}} %update or delete as desired
+\date{Last Updated: June 7, 2015}%need to manually set this, since sharelatex compiles every time the page is viewed
+%END TITLE SETTINGS
+
+%MISC DOCUMENT SETTINGS
+\setlength\parindent{0pt}%removes paragraph indentation
+\setlength\parskip{0em}%remove line spacing for table of contents
+
+%\pgfplotsset{compat=1.11}%something about pgfplots compatibility recommended by the pdflatex compiler
+%END MISC DOCUMENT SETTINGS
+
+%MISC TRIGONOMETRY STUFF
+\let\arcsin\relax
+\let\arccos\relax
+\let\arctan\relax
+
+\DeclareMathOperator{\arcsin}{sin^{-1}}
+\DeclareMathOperator{\arccos}{cos^{-1}}
+\DeclareMathOperator{\arctan}{tan^{-1}}
+\DeclareMathOperator{\arcsec}{sec^{-1}}
+\DeclareMathOperator{\arccsc}{csc^{-1}}
+\DeclareMathOperator{\arccot}{cot^{-1}}
+%END TRIG STUFF
+
+%BEGIN DOCUMENT PROPER
+\begin{document}
+%title page stuff
+\maketitle
+\thispagestyle{empty}
+\begin{center}
+	Compiled for the \textsc{Commonwealth Governor's School} by alumni using information from \textit{College Physics 9e, AP Edition} by R. Serway and C. Vuille and various online resources.
+\end{center}
+
+\par This document is designed to be as comprehensive as possible with regards to algebra-based College Physics, comparable to the AP Physics I and II curriculum. Little focus is given to the more calculus-based University Physics, comparable to the AP Physics C curriculum. \\
+
+\par Furthermore, it is impossible to fit the sum of all possible knowledge in the field within the pages of this document, however numerous they may be. That said, if you feel an addition or change to the content or formatting of the document is advisable, feel free to contact us (see above). \\
+
+\par The most recent version of this document will always be found online. If for some reason the link below is inactive, contact us. \\
+
+\par If you are viewing this online at the link below, use the download button to the right of the ``Recompile'' button to obtain a \texttt{PDF} copy of this document. \\
+
+\par\lcp 
+
+%table of contents & similar
+\clearpage
+\tableofcontents
+
+\setlength\parskip{1em}%uses default paragraph spacing after T.O.C.
+
+%formula sheet stuff by book chapters
+\include{chapters/ch01}%ch.01: general formulae
+\include{chapters/ch02}%ch.02: motion in one dimension
+\include{chapters/ch03}%ch.03: vectors and two-dimensional motion
+\include{chapters/ch04}%ch.04: the laws of motion
+\include{chapters/ch05}%ch.05: energy
+\include{chapters/ch06}%ch.06: momentum & collisions
+\include{chapters/ch07}%ch.07: rotational motion & the law of gravity
+\include{chapters/ch08}%ch.08: rotational equilibrium & rotational dynamics
+\include{chapters/ch09}%ch.09: solids & fluids
+\include{chapters/ch10}%ch.10: thermal physics
+\include{chapters/ch11}%ch.11: energy in thermal processes
+\include{chapters/ch12}%ch.12: laws of thermodynamics
+\include{chapters/ch13}%ch.13: vibrations & waves
+\include{chapters/ch14}%ch.14: sound
+\include{chapters/ch15}%ch.15: electric forces & electric fields
+\include{chapters/ch16}%ch.16: electrical energy & capacitance
+\include{chapters/ch17}%ch.17: current & resistance
+\include{chapters/ch18}%ch.18: direct-current circuits
+\include{chapters/ch19}%ch.19: magnetism
+\include{chapters/ch20}%ch.20: induced voltages & inductance
+\include{chapters/ch21}%ch.21: alternating current circuits & electromagnetic waves
+\include{chapters/ch22}%ch.22: reflection & refraction of light
+\include{chapters/ch23}%ch.23: mirrors & lenses
+\include{chapters/ch24}%ch.24: wave optics
+\include{chapters/ch25}%ch.25: optical instruments
+\include{chapters/ch26}%ch.26: relativity
+\include{chapters/ch27}%ch.27: quantum physics
+\include{chapters/ch28}%ch.28: atomic physics
+\include{chapters/ch29}%ch.29: nuclear physics
+\include{chapters/ch30}%ch.30: nuclear energy & elementary particles
+
+%formula sheet appendix stuff
+\include{appendix-01/app01}%app.01: supplementary information
+\include{appendix-02/app02}%app.02: quick reference information
+%\include{appendix-03/app03}%app.03: problem solving strategies
+%--removed the problem solving strats because the purpose of the sheet isn't to teach physics but to be a resource for physics
+
+\end{document}
