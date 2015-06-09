@@ -1,0 +1,40 @@
+\begin{longtable}{p{0.5\textwidth} p{0.5\textwidth}}
+  \tablesubsection{Mach Number \& Shock Waves}
+   & \\
+\end{longtable}
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}
+    %draws the circles with labels and v_s
+    \draw (0,0) circle [radius=2.3] node (s0) [text=black] {\textbullet} node [text=black, below=0 of s0] {$S_0$};
+    \draw (1,0) circle [radius=1.93] node (s1) [text=black] {\textbullet} node [text=black, below=0 of s1] {$S_1$};
+    \draw (2,0) circle [radius=1.54] node (s2) [text=black] {\textbullet} node [text=black, below=0 of s2] {$S_2$};
+    \draw (3,0) circle [radius=1.16] node (s3) [text=black] {\textbullet};
+    \draw (4,0) circle [radius=0.77] node (s4) [text=black] {\textbullet};
+    \draw (5,0) circle [radius=0.39] node (s5) [text=black] {\textbullet};
+    \node (sn) [text=black, right=0.55 of s5] {\textbullet} node [text=black, below=0 of sn] {$S_n$};
+    \node (vs) [text=black, above=1 of sn] {$v_s$};
+    \draw [->] (vs) to +(1,0);
+    %draws the three lines
+    \draw (0,0) -- (6,0);%line from s0 to sn
+    \draw (sn) to (s0 |- 0,2.5);%top line
+    \draw (sn) to (s0 |- 0,-2.5);%bottom line
+    %labels the angle
+    \node (endpoint) [below=2.13 of s0]{};%angle endpoint
+    \node (midpoint) [right=0.78 of s5]{};%angle midpoint
+    \tkzMarkAngle[fill=none, size=6cm,opacity=1](s0,midpoint,endpoint);%to make the line at the end
+    \tkzMarkAngle[fill=blue, size=6cm, opacity=0.1](s0,midpoint,endpoint);%to fill the angle without touching the line at the end
+    \tkzLabelAngle[pos=-7.5](s0,midpoint,endpoint){$\theta$};
+  \end{tikzpicture}
+  \caption{A representation of a shock wave, produced when a source moves from $S_0$ to $S_n$ with a speed $v_s$ which is greater than the wave speed $v$ in the medium where the radius of each circle surrounding a point $S_x$ is $vt$, the velocity $v$ of sound in the medium multiplied by $t$, the amount of time elapsed since the source of the sound was at a point $S_x$}
+  \label{fig:shock-waves}
+\end{figure}
+\begin{longtable}{p{0.5\textwidth} p{0.5\textwidth}}
+  \(\displaystyle\sin\theta=\frac{v}{v_s} \therefore \theta=\arcsin\left(\frac{v}{v_s}\right)\) & Yields the angle $\theta$ between a line tangent to a circle and the direction of motion of the sound source where $v$ is the speed of sound in a that medium and $v_s$ is the velocity of the sound source in that medium \\
+
+  \notabene{The ratio $\frac{v}{v_s}$ is the \textit{Mach number}. The conical wave front produced when $v_s > v$ (supersonic speeds) is known as a shock wave. An interesting example of a shock wave is the bow wave of a boat when the boat's speed exceeds the speed of the water waves}
+\end{longtable}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

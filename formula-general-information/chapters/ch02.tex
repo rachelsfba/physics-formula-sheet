@@ -1,0 +1,34 @@
+\begin{longtable}{p{0.475\textwidth} p{0.475\textwidth}}
+	\tablesection{Chapter 2: Motion in One Dimension}
+	\tablesubsection{General Formul\ae}
+	
+	\notabene{A \textit{vector} quantity has both magnitude and direction while a \textit{scalar} quantity can be completely specified by its magnitude, but has no direction. Displacement $\Delta\vec{x}$, velocity $\vec{v}$, and acceleration $\vec{a}$ are vector quantities. Temperature $T$ is an example of a scalar quantity.}
+	
+	\(\Delta x \equiv x_f - x_i\) & The displacement $\Delta x$ of an object is defined as its \textit{change in position} where $x_i$ is the initial position of the object and $x_f$ is the final position of the object. Throughout this sheet the indices $i$ and $f$ will stand for initial and final, respectively. Displacement is measured in meters \si{\meter} \\
+	\(\bar{v} \equiv \displaystyle\frac{\Delta x}{\Delta t} = \frac{x_f - x_i}{t_f - t_i}\) & The average velocity $\bar{v}$ during time interval $\Delta t$ with displacement $\Delta x$, measured in meters per second \si{\meter\per\second} \\
+	\(\Delta s = \displaystyle\sqrt{\left(x_f - x_i\right)^2 + \left(y_f - y_i\right)^2}\) & The distance $\Delta s$ between two coordinates, measured in meters \\
+	\(v \equiv \displaystyle\lim_{\Delta t\to 0}\frac{\Delta x}{\Delta t}\) & The instantaneous velocity $v$ is the limit of the average velocity $\bar{v}$ as the time interval $\Delta t$ becomes infinitesimally small, measured in meters per second \\
+	\(\bar{a} \equiv \displaystyle\frac{\Delta v}{\Delta t} = \frac{v_f - v_i}{t_f - t_i}\) & The average acceleration $\bar{a}$ during the time interval $\Delta t$ is the change in velocity $\Delta v$ across the time interval $\Delta t$, measured in meters per second per second \si{\meter\per\second\squared} \\
+	\(a \equiv\displaystyle\lim_{\Delta t\to 0}\frac{\Delta v}{\Delta t}\) & The instantaneous acceleration $a$ is the limit of the average acceleration $\bar{a}$ as the time interval $\Delta t$ approaches $0$, measured in \si{\meter\per\second\squared} \\
+	
+	\tablesubsection{One-Dimensional Motion with Constant Acceleration}
+	
+	\(v = v_i + at\) & The velocity $v$ of an object with initial velocity $v_i$ and constant acceleration $a$ across the time interval $t$ \\
+	\(\Delta x = \frac{1}{2}\left(v_i + v_f\right)t\) & The displacement $\Delta x$ of an object with constant acceleration \\
+	\(\Delta x = v_it + \frac{1}{2}at^2\) & The displacement $\Delta x$ of an object with constant acceleration $a$ \\
+	\(v_f = \displaystyle\sqrt{v_i^2 + 2a\Delta x}\) & The final velocity $v_f$ of an object with constant acceleration $a$ \\
+	
+	\tablesubsection{Freely Falling Objects}
+	
+	\(a = g = \SI{9.80665}{\meter\per\second\squared}\) & The acceleration due to gravity $g$ at sea level on Earth. On the AP exam, you may use an approximation using just one significant figure, \SI{10}{\meter\per\second\squared}  \\
+	\(t_{max} = \displaystyle\frac{v_i}{g}\) & The amount of time $t_{max}$ it will take for an object to reach its maximum height assuming $v_i$ is opposite $g$ \\
+	\(y = y_i + v_it + \frac{1}{2}gt^2\) & The position $y$ of any object across time interval $t$ assuming $v_i$ is opposite $g$ \\
+	\(y_{max} = y_i + \displaystyle\frac{v_i^2}{2g}\) & The maximum height $y_{max}$ of an object assuming $v_i$ is opposite $g$ \\
+	\(t = \displaystyle\sqrt{\frac{2\Delta y}{g}}\) & The time taken $t$ for an object to be displaced $\Delta y$ meters in the $y$-direction due to $g$ \\
+
+    \notabene{The initial velocity in most problems involving freely-falling objects is \SI{0}{\meter\per\second}}
+\end{longtable}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

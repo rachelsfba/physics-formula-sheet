@@ -1,0 +1,111 @@
+\begin{longtable}{p{0.4\textwidth} p{0.6\textwidth}}
+  \tablesubsection{Atwood Devices}
+  \label{ssec:atwood}
+   &\\%for spacing tablesubsection command
+\end{longtable}
+
+\vspace{-1cm}
+
+\begin{center}
+    \begin{tikzpicture}
+        \node (P) [circle, draw=black, fill=white, text=black, scale=1]{$P$};%draws pulley P
+        \node (m1) [rectangle, draw=black, fill=white, text=black, scale=1, below=1cm of P, xshift=-0.42cm]{$m_1$};%draws m1
+        \node (m2) [rectangle, draw=black, fill=white, text=black, scale=1.25, below=2cm of P, xshift=0.33cm]{$m_2$};%draws m2
+        \draw (m1) to node(a1)[text=black, midway, left]{$a$} (P.west);%connects m1 to P
+        \draw (m2) to node(a2)[text=black, midway, right]{$a$} (P.east);%connects m2 to P
+        \draw[->] (a1) to +(0,0.5);%draws a1 arrow
+        \draw[->] (a2) to +(0,-0.5);%draws a2 arrow
+  	\end{tikzpicture}
+\end{center}
+An Atwood device in the form of a frictionless pulley $P$ with masses $m_1$ and $m_2$ affixed to a string about the pulley with net acceleration $\vec{a}$ caused by sum of the force of gravity acting on the two masses. By convention, $m_2$ is the larger of the two masses.
+
+\begin{longtable}{p{0.45\textwidth} p{0.45\textwidth}}
+  \(T = \left(\displaystyle\frac{2m_1m_2}{m_1+m_2}\right)g\) & Yields the force of tension acting on two objects in an Atwood device \\
+  \(F_{net} = m_2g - m_1g\) & The net force acting on the two-mass system \\
+  \(a = \displaystyle\left(\frac{m_2-m_1}{m_1+m_2}\right)g\) & The acceleration of the system relative to $m_1$ \\
+\end{longtable}
+
+\begin{center}
+    \begin{tikzpicture}
+    \node (P) [circle, draw=black, fill=white, text=black, scale=1]{$P$};%draws pulley P
+    \node (surf) [rectangle, draw=black, fill=white, text=black, scale=1, left=3 of P, yshift=-4]{flat surface};%draws the flat surface
+    \node (m1) [rectangle, draw=black, fill=white, text=black, scale=1, above=0 of surf]{$m_1$};%draws m1 on the surface
+    \draw (m1) to node(a1)[text=black, midway, above]{$a$} (P.north);%connects m1 to P
+    \node (m2) [rectangle, draw=black, fill=white, text=black, scale=1.5, below=2 of P, xshift=8]{$m_2$};%draws m2
+    \draw (m2) to node(a2)[text=black, midway, right]{$a$} (P.east);%connects m2 to P
+    \draw[->] (a1) to +(0.75,0);%a1 direction
+    \draw[->] (a2) to +(0,-0.75);%a2 direction
+    \node (fric) [text=black, above=0 of a1]{$F_f$};%friction
+    \draw[->] (fric) to +(-0.75,0);%fric direction
+   	\end{tikzpicture}
+\end{center}
+An Atwood device in the form of a frictionless pulley $P$ where $m_1$ is placed on a horizontal surface while $m_2$ remains in free-fall. $F_f$ is the force of friction acting on $m_1$ by the flat surface.
+
+\begin{longtable}{p{0.45\textwidth} p{0.45\textwidth}}
+  \(a = \displaystyle\left(\frac{m_2-\mu_km_1}{m_1+m_2}\right)g\) & The acceleration of an Atwood device on a flat surface such that the effective acceleration due to gravity $a_g$ acting upon $m_1$ is $0$ due to the restoring normal force $\vec{n}$ acting against gravity where $m_1$ is placed on a flat surface with coefficient of kinetic friction $\mu_k$ \\
+\end{longtable}
+
+\begin{center}
+  \begin{tikzpicture}
+    \node (P) [circle, draw=black, fill=white, text=black, scale=1]{$P$};%draws P
+    \node (surf) [rectangle, draw=black, fill=white, text=black, scale=1, rotate=25, left=1 of P, yshift=-22pt]{inclined surface};%draws surface
+    \node (m1) [rectangle, draw=black, fill=white, text=black, scale=1, rotate=25, above=0 of surf]{$m_1$};%draws m1
+    \draw (m1) to node(a1)[midway, above, sloped, text=black]{$a$} (P.north west);%connects m1 to P
+    \node (m2) [rectangle, draw=black, fill=white, text=black, scale=1.25, below=2cm of P, xshift=9.5pt]{$m_2$};%draws m2
+    \draw (m2) to node(a2)[midway, right, text=black]{$a$} (P.east);%connects m2 to P
+    \draw[->] (a1) to +(0.6,0.3);%m1 accel
+    \draw[->] (a2) to +(0,-0.75);%m2 accel
+    \node (f) [text=black, scale=1, above=0 of a1, rotate=25]{$F_f$};%friction text
+    \draw[->] (f) to +(-0.6,-0.3);%friction accel
+    %=============== stuff for theta ====================
+    %theta nodes
+    \coordinate (X) at (surf.south west){};
+    \coordinate (Y) at (surf.south){};
+    \coordinate (Z) at (surf.south |- 0,-2.5){};%should place Z (0,-1) relative to Y...or as close as can be, since the coordinates are being funky with this command
+    %theta angle
+    \tkzMarkAngle[fill=white, size=0.5cm, opacity=0.7](X,Y,Z)
+    \tkzLabelAngle[pos=0.75](X,Y,Z){$\theta$}
+    %theta line
+    \draw[->] (Y) -- node[text=black, midway, right]{$\vec{F}_g$} (Z);
+	\end{tikzpicture}
+\end{center}
+An Atwood device in the form of a frictionless pulley $P$ where $m_1$ is placed on an inclined surface while $m_2$ remains in free-fall. $F_f$ is the force of friction acting on $m_1$ by the inclined surface. $\theta$ is the angle between the inclined surface and a vector in the direction of the force of gravity $\vec{F}_g$.
+
+\begin{longtable}{p{0.45\textwidth} p{0.45\textwidth}}
+  \(a = \displaystyle\left(\frac{m_2 - m_1 \sin\theta}{m_1 + m_2}\right)g\) & The acceleration of an Atwood device on an inclined flat surface, neglecting friction \\
+  \(a = \displaystyle\left(\frac{m_2-\left(m_1\sin\theta + \mu_km_1\sin\theta \right)}{m_1 + m_2}\right)g\) & The acceleration of an Atwood device on an inclined flat surface, respecting friction between $m_1$ and the inclined surface, but neglecting friction of pulley $P$
+\end{longtable}
+
+%
+%		POST-DIAGRAM ATWOOD STUFF
+%
+
+For very small mass differences between $m_1$ and $m_2$, the rotational inertia $I$ of any pulley $P$ of radius $r$ cannot be neglected. The angular acceleration of the pulley is given by the no-slip condition:
+
+\begin{longtable}{p{0.45\textwidth} p{0.45\textwidth}}
+    \( \displaystyle \alpha = \frac{a}{r} \) & Yields the angular acceleration $\alpha$ \\
+    \(\displaystyle \tau_{net}=\left(T_1 - T_2 \right)r - \tau_f = I \alpha \) & Yields the net torque $\tau_{net}$ where $\tau_f$ is the torque due to friction and $\Delta T$ is the difference in tensions $T_1$ and $T_2$ due to $m_1$ and $m_2$ \\
+\end{longtable}
+
+Combining Newton's second law for the hanging masses and solving for $T_1$, $T_2$, and $a$, we get:
+
+\begin{longtable}{p{0.45\textwidth} p{0.45\textwidth}}
+    \( \displaystyle a = \frac{g \left(m_1 - m_2 \right) - \left( \frac{\tau_f}{r} \right)}{m_1 + m_2 + \left(\frac{I}{r^2} \right)}\) & Yields the acceleration of the Atwood system \\
+    \(\displaystyle T_1 = \frac{m_1 g \left(2 m_2 + \frac{I}{r^2} + \frac{\tau_f}{r g} \right)}{m_1 + m_2 + \left(\frac{I}{r^2} \right)}\) & Tension in the string segment nearest $m_1$ \\
+    \(\displaystyle T_2 = \frac{m_2 g \left(2 m_1 + \frac{I}{r^2} + \frac{\tau_f}{r g}\right)}{m_1 + m_2 + \left(\frac{I}{r^2}\right)} \) & Tension in the string segment nearest $m_2$
+\end{longtable}
+
+Should bearing friction be negligible (but not the inertia of the pulley and not the traction of the string on the pulley rim), the equations simplify as the following results:
+
+\begin{longtable}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+    \( \displaystyle a = \frac{g \left(m_1 - m_2 \right)}{m_1 + m_2 + \frac{I}{r^2}} \) &
+    \( \displaystyle T_1 = \frac{m_1 g \left(2 m_2 + \frac{I}{r^2} \right)}{m_1 + m_2 + \frac{I}{r^2}} \) &
+    \( \displaystyle T_2 = \frac{m_2 g \left(2 m_1 + \frac{I}{r^2} \right)}{m_1 + m_2 + \frac{I}{r^2}} \) \\
+\end{longtable}
+
+These examples provide but some of the many Atwood device situations you may encounter in your journey through the world of physics.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:
