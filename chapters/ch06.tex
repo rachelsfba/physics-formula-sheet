@@ -1,0 +1,52 @@
+\begin{longtable}{p{0.5\textwidth} p{0.5\textwidth}}
+  \tablesection{Chapter 6: Momentum \& Collisions}
+  \tablesubsection{Momentum \& Impulse}
+  
+     \( \vec{p} \equiv m\vec{v} \) & The linear momentum \(\vec{p}\) of an object of mass $m$ moving with velocity \(\vec{v}\) is the product of its mass and velocity.  This is measured in \si{\kilo\gram\meter\per\second} \\
+   \(KE = \displaystyle\frac{\vec{p}^2}{2m}\) & implicitly, we arrive at \(\vec{p} = \displaystyle\sqrt{\left(KE\right)\left(2m\right)}\) \\
+   \(\displaystyle\sum\vec{p}_{system} = \vec{p}_1 + \vec{p}_2 + \ldots + \vec{p}_n\) & The sum of linear momentum of a system can be expressed as the algebraic sum of all individual linear momenta of that system \\
+   \(\displaystyle\vec{F}_{net} = m\vec{a} = m\frac{\Delta\vec{v}}{\Delta t} = \frac{\Delta\left(m\vec{v}\right)}{\Delta t} = \frac{\Delta\vec{p}}{\Delta t}\) & Newton's second law and momentum; the change in an object's momentum \(\Delta \vec{p}\) divided by the time interval \(\Delta t\) yields the constant net force \(\vec{F}_{net}\) acting upon the object \\
+   \(\vec{J} = \vec{F}\Delta t = \Delta\vec{p} = m\Delta\vec{v} = m\vec{v}_f - m\vec{v}_i\) & Impulse-momentum theorem; Thus impulse $\vec{J}$ is the change in momentum measured in \si{\newton\second} \\
+   \(\vec{F}_{avg} \Delta t = \Delta\vec{p}\) & Alternate form of the impulse-momentum theorem \\
+  
+    \tablesubsection{Conservation of Momentum}
+
+  \(m_1\vec{v}_{1i} + m_2\vec{v}_{2i} = m_1\vec{v}_{1f} + m_2\vec{v}_{2f}\) & The law of conservation of momentum for two objects interacting in a system. This can be expanded to any number of objects interacting in a system \\
+  \notabene{When no net external force acts on a system, the total momentum of the system remains constant in time}
+
+  \tablesubsection{Collisions}
+
+  \(\vec{v}_f = \displaystyle\frac{m_1\vec{v}_{1i} + m_2\vec{v}_{2i}}{m_1 + m_2}\) & Yields the final velocity for two objects in a perfectly inelastic collision \\
+  \(m_1\vec{v}_{1i} + m_2\vec{v}_{2i} = m_1\vec{v}_{1f} + m_2\vec{v}_{2f}\) & \\
+  \(\frac{1}{2}m_1\vec{v}_{1i}^2 + \frac{1}{2}m_2\vec{v}_{2i}^2 = \frac{1}{2}m_1\vec{v}_{1f}^2 + \frac{1}{2}m_2\vec{v}_{2f}^2\)& The two conditions required for elastic collisions, since their momenta (first condition) and kinetic energy (second condition) are both conserved. \\
+	\(\vec{v}_{1i} - \vec{v}_{2i} = -\left(\vec{v}_{1f} - \vec{v}_{2f}\right)\) & The relationship between velocities in a perfectly elastic head-on collision \\
+	\(\vec{v}_{1f} = \displaystyle (\frac{m_1 - m_2}{m_1 + m_2})\vec{v}_{1i}\) & Applies to head-on elastic collisions \\ \\%spacing between equations
+	\(\vec{v}_{2f} = \displaystyle (\frac{2m_1}{m_1 + m_2})\vec{v}_{1i}\) & Applies to head-on elastic collisions \\
+
+  \notabene{\textit{Inelastic Collisions} are collisions in which momentum is conserved, but kinetic energy is not. In a \textit{Perfectly Inelastic Collision}, two objects collide but remain attached after the collision so their final velocities are the same. \textit{Elastic Collisions} are collisions in which both momentum and kinetic energy are conserved. For example, two objects collide and bounce off of one another after the collision}
+
+  \tablesubsection{Glancing Collisions}
+
+  \(m_1\vec{v}_{1ix} + m_2\vec{v}_{2ix} = m_1\vec{v}_{1fx} + m_1\vec{v}_{2fx}\) & \\
+  \(m_1\vec{v}_{1iy} + m_2\vec{v}_{2iy} = m_1\vec{v}_{1fy} + m_1\vec{v}_{2fy}\) & Component formul\ae\space for glancing collisions between two objects \\
+  
+  \notabene{In glancing collisions problems, object 1 moves at an angle $\theta$ with respect to the horizontal while object 2 moves at an angle $\phi$ with respect to the horizontal}
+  
+  \tablesubsection{Center of Mass}
+  
+  \(X_{cm}=\displaystyle\frac{\sum m_x}{\sum m}=\frac{m_1x_1+m_2x_2+\ldots+m_nx_n}{m_1+m_2+\ldots+m_n}\) & Yields the $x$-coordinate of the center of mass \\ \\%additional spacing between lines
+  \(Y_{cm}=\displaystyle\frac{\sum m_y}{\sum m}=\frac{m_1y_1+m_2y_2+\ldots+m_ny_n}{m_1+m_2+\ldots+m_n}\) & Yields the $y$-coordinate of the center of mass \\
+
+  \notabene{In the above formul\ae, a term such as $m_1x_1$ refers to the mass $m_1$ of object 1 and the $x$-coordinate $x_1$ of object 1}
+
+  \tablesubsection{Rocket Propulsion}
+
+  \(\Delta v = \vec{v}_e\displaystyle\ln\left(\frac{M_i}{M_f}\right)\) & Tsiolkovsky rocket equation; yields the potential change in velocity $\Delta v$ where $M_i$ is the mass of the rocket plus the initial fuel mass, $M_f$ is the mass of the rocket plus the remaining fuel mass and $\vec{v}_e$ is the velocity of the exhaust relative to the rocket \\
+  \(Ma = M\displaystyle\frac{\Delta v}{\Delta t} = \abs{\vec{v}_e\frac{\Delta M}{\Delta t}}\) & Yields instantaneous thrust where $\Delta M$ is the change in rocket mass due to fuel loss, $\vec{v}_e$ is the velocity of the exhaust relative to the rocket, and $\Delta t$ is the time interval \\
+
+  \notabene{$\Delta v$ is presented as a scalar quantity because it is simply the magnitude of the potential change in velocity of a rocket}
+\end{longtable}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:
