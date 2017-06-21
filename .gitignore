@@ -1,0 +1,16 @@
+# Swap and backup files
+*.swp
+*.bak
+*~
+
+# Compiled/processed TeX files
+*.bib
+*.aux
+*.log
+*.out
+*.toc
+main.pdf
+
+# pandoc-converted README
+README.html
+

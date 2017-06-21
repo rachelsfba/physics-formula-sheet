@@ -1,0 +1,25 @@
+\begin{longtable}{p{0.5\textwidth} p{0.5\textwidth}}
+  \tablesection{Chapter 18: Direct-Current Circuits}
+  \tablesubsection{Sources of Electromotive Force (emf)}
+
+  \(\Delta V=\varepsilon-Ir\) & Yields the electric potential $\Delta V$ where $\varepsilon$ is a source of emf in a series with an internal resistance $r$ and current $I$ \\
+  \(\varepsilon=IR+Ir\) & Relates $\varepsilon$ to both internal resistance $r$ and load resistance $R$ \\
+  \(I=\displaystyle\frac{\varepsilon}{R+r}\) & Rearranging the previous equation yields current \\
+  \(I\varepsilon=I^2R+I^2r\) & Yields the total power output $I\varepsilon$ of the source of emf \\
+  \(R_{eq}=\displaystyle\sum_{i=1}^{i=n}R_i\) & Yields the equivalent resistance of a series combination of any number of resistors $n$ as the algebraic sum of the resistance of each resistor $R_i$ \\
+
+  \tablesubsection{Resistors in Parallel}
+
+  \(I=\displaystyle\frac{\Delta V}{R_{eq}}\) & Relates current, potential drop, and equivalent resistance \\
+  \(\displaystyle\frac{1}{R_{eq}}=\sum_{i=1}^{i=n}\frac{1}{R_i}\) & Yields the equivalent resistance of any number of resistors $n$ with individual resistances $R_i$ \\
+
+  \tablesubsection{RC Circuits}
+
+  \(Q=C\varepsilon\) & Yields the maximum equilibrium value $Q$ for a capacitor with capacitance $C$ and maximum voltage across the capacitor $\varepsilon$ in a system where the capacitor was uncharged at time $t=0$ and begins charging when the circuit is completed \\
+  \(q=Q\displaystyle\left(1-e^{\left(\frac{-t}{RC}\right)}\right)\) & If we assume the capacitor described above is uncharged at time $t=0$, the charge $q$ on the capacitor varies with time $t$ according to this equation where $e=2.718$ is Euler's constant, $t$ is any instant in time, $Q$ is the maximum charge, $R$ is the load resistance, and $C$ is the capacitance. The voltage $\Delta V$ across the capacitor at any time $t$ is obtained by $\Delta V=\frac{q}{C}$ \\
+  \(\tau=RC\) & The time constant $\tau$ represents the time required for the charge to increase from zero to \SI{63.2}{\percent} of its maximum equilibrium value (i.e., $0.632Q$) \\
+\end{longtable}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:

@@ -1,0 +1,56 @@
+\begin{longtable}{p{0.5\textwidth} p{0.5\textwidth}}
+  \tablesection{Chapter 8: Rotational Equilibrium \& Rotational Dynamics}
+  \tablesubsection{Torque}
+
+  \(\vec{\tau} = r\vec{F}\) & Yields torque $\tau$ where $r$ is the magnitude of the position vector $\vec{r}$ between point $O$ and $F$ the magnitude of the force applied perpendicularly to $\vec{r}$, measured in \si{\newton\meter} \\
+  \(\vec{\tau} = r\vec{F}\sin\theta\) & Yields torque where $\vec{F}$ is applied at an angle not equal to \SI{90}{\degree} from $\vec{r}$ \\
+  \(\vec{\tau}_{net}=\vec{\tau}_1+\vec{\tau}_2+\ldots+\vec{\tau}_n\) & Yields the net torque acting on an object at rest \\
+  
+  \notabene{The vectors $r$ and $\vec{F}$ lie in a plane. Additionally, torque is the rotational analogue for force. The rate of rotation of an object does not change unless the object is acted on by a net torque}
+  \notabene{The \underline{Right Hand Rule} applies to torques. Point your index finger toward the direction in which $\vec{F}$ is acting. Your thumb points in the direction in which $\vec{\tau}$ is acting}
+
+  \tablesubsection{Torque \& the Two Conditions for Equilibrium}
+
+  \begin{tabular}{l l}
+    \(\sum\vec{F}=0\) & \(\sum\vec{\tau}=0\)
+  \end{tabular} & The two conditions for equilibrium \\
+
+  \tablesubsection{The Center of Gravity}
+
+  \(\displaystyle\frac{\sum m_ix_i}{\sum m_i}\) & Yields the center of gravity along the $x$-axis where $m_i$ is the mass of the object at point $x_i$. This formula can be applied to the $y$- and $z$-axes \\
+
+  \notabene{The net gravitational torque on an object is zero if computed around the center of gravity. The object will balance if supported at that point or any point along a vertical line above or below that point}
+
+  \tablesubsection{Relationship Between Torque \& Angular Acceleration}
+
+  \(\vec{\tau} = mr^2\vec{\alpha}\) & Yields the torque acting on an object about its axis of rotation \\
+  \(I\equiv\sum mr^2\) & Yields the moment of inertia $I$ for an object as a sum of the constants of proportionality $mr^2$ of that object in \si{\kilo\gram\meter\squared} \\
+  \(\sum\tau = I\alpha\) & Rotational analog of Newton's second law \\
+
+  \notabene{The moment of inertia of a system depends on how the mass is distributed and on the location of the axis of rotation. See \textit{Appendix II} on page \pageref{ssec:moment-inertia} for a table of moments of inertia for slected shapes}
+
+  \tablesubsection{Rotational Energy}
+
+  \(KE_r = \frac{1}{2}I\vec{\omega}^2\) & Yields rotational kinetic energy \\
+  \(\left(KE_t + KE_r + PE\right)_i = \left(KE_t + KE_r + PE\right)_f\) & The conservation of mechanical energy \\
+  \(W_{nc} = \Delta KE_t + \Delta KE_r + \Delta PE\) & Yields nonconservative work \\
+  \(W=\vec{\tau}\theta\) & Yields rotational work \\
+  \(P=\vec{\tau}\vec{\omega}\) & Yields rotational power \\
+  \(W_{net}=\Delta KE=\frac{1}{2}\left(\vec{\omega}_f^2-\vec{\omega}_i^2\right)\) & Rotational equivalent of the Work-Energy Theorem \\
+  \(\vec{J}=\vec{\tau} t=I\Delta\vec{\omega}\) & Angular impulse, causing a change in the momentum of a body \\
+  \(I=I_{cm}+Mh^2\) & The \textit{Parallel-Axis Theorem}, providing the moment of inertia $I$ of a body about any axis parallel to the axis passing through the centre of mass; $I_{cm}$ is the moment of inertia about an axis through the center of mass, $M$ is the total mass of the body, and $h$ is the perpendicular distance between the two parallel axes \\
+  
+  \notabene{See \textit{Appendix II} on page \pageref{ssec:moment-inertia} for details on the specific moments of inertia $I$ for various shapes}
+
+  \tablesubsection{Angular Momentum}
+
+   \(\vec{L} \equiv I\vec{\omega}\) & The angular momentum of an object, measured in \si{\kilo\gram\meter\squared\per\second} \\
+   
+   \(\displaystyle\sum\vec{\tau} = \frac{\textrm{change in angular momentum}}{\textrm{time interval}} = \frac{\Delta\vec{L}}{\Delta t}\) & The rotational analogue of Newton's second law, which can be written in the form \(\vec{F} = \frac{\Delta\vec{p}}{\Delta t}\) and states that the net torque acting on an object is equal to the time rate of change of the object's angular momentum \\
+   
+\notabene{If $\vec{L}_i$ and $\vec{L}_f$ are the angular momenta of a system at two different times and there is no external torque (thus $\sum\vec{\tau} = 0$), then \(\vec{L}_i = \vec{L}_f\); thus angular momentum is conserved. This is the \textit{Law of Conservation of Angular Momentum}. If the moment of inertia of an isolated rotating system changes, the system's angular speed will change. Thus, conservation of angular momentum requires that \(I_i\vec{\omega}_i = I_f\vec{\omega}_f\) if \(\sum\vec{\tau} = 0\).}
+\end{longtable}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:

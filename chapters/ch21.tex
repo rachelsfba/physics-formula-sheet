@@ -1,0 +1,103 @@
+\begin{longtable}{p{0.5\textwidth} p{0.5\textwidth}}
+  \tablesection{Chapter 21: Alternating-Current Circuits \& Electromagnetic Waves}
+  \tablesubsection{Resistors in an AC Circuit}
+
+  \(\Delta v=\Delta V_{max}\sin 2\pi ft\) & Yields the instantaneous voltage $\Delta v$ of an AC circuit with maximum voltage $\Delta V_{max}$ and frequency of voltage change $f$ \\
+  \(P=i^2R\) & Yields the power $P$ of an AC circuit where $i$ is the instantaneous current in the resistor with resistance $R$, because the average value of current over one cycle is zero, because the current is held in equal and opposite magnitudes for equal periods of time due to the sinusoidal nature of AC generators \\
+  \(I_{rms}=\displaystyle\frac{I_{rms}}{\sqrt{2}}=0.707I_{max}\) & Yields the Root Mean Square of the current, the direct current that dissipates the same amount of energy in a resistor that is dissipated by the actual alternating current \\
+  \(P_{av}=I^2_{rms}R\) & Yields the average power of an AC circuit in terms of its rms current $I_{rms}$ and resistance $R$ \\
+  \(\Delta V_{rms}=\displaystyle\frac{\Delta V_{max}}{\sqrt{2}}=0.707\Delta V_{max}\) & Yields the rms voltage $\Delta V_{rms}$ in the same manner as the rms current described above \\
+  \(\Delta V_{R,rms}=I_{rms}R\) & The rms voltage across a resistor is equal to the rms current in the circuit times the resistance \\
+  \(\Delta V_{R,max}=I_{max}R\) & A form of the previous equation which holds true if maximum values of current and voltage are used \\
+
+  \notabene{In a plot of current and voltage across a resistor versus time in an AC circuit, the current and voltage are in phase: they simultaneously reach their maximum values, their minimum values, and zero values}
+
+  \tablesubsection{Capacitors in an AC Circuit}
+
+  \(X_C\equiv\displaystyle\frac{1}{2\pi fC}\) & Yields the capacitive reactance $X_C$, the impeding effect of a capacitor on the current in an AC circuit when $C$ is in farads \si{\farad} and $f$ is in \si{\hertz}. $X_C$ is measured in ohms \si{\ohm}. Note that $2\pi f=\vec{\omega}$ the angular frequency \\
+  \(\Delta V_{C,rms}=I_{rms}X_C\) & Relates rms voltage and rms current in an AC circuit to the capacitive reactance \\
+
+  \notabene{In a plot of current and voltage across a capacitor versus time in an AC circuit, the current and voltage are out of phase: they do not simultaneously reach their maximum values, minimum values, and zero values. In this instance, voltage across a capacitor lags behind current by \SI{90}{\degree}}
+
+  \tablesubsection{Inductors in an AC Circuit}
+
+  \(\Delta v_L=L\displaystyle\frac{\Delta I}{\Delta t}\) & Yields the magnitude of the back emf in a system consisting of an inductor connected to the terminals of an AC source, the changing current output of the generator produces a back emf that impedes the current in the circuit \\
+  \(X_L\equiv 2\pi fL\) & Yields the effective resistance of the coil (inductor) in an AC current where $X_L$ is the inductive reactance \\
+  \(\Delta V_{L,rms}=I_{rms}X_L\) & Yields the rms voltage across the coil $\Delta V_{L,rms}$ where $I_{rms}$ is the rms current in the coil with inductive reactance $X_L$ \\
+
+  \notabene{In a plot of current and voltage across an inductor versus time, the current and voltage are out of phase. In this instance, voltage across the inductor leads current by \SI{90}{\degree}}
+
+  \tablesubsection{The $RLC$ Series Circuit}
+  \notabene{In previous sections, inductors, capacitors, and resistors were examined separately when connected to an AC voltage source. an $RLC$ series circuit examines these elements combined}
+
+  \(i=I_{max}\sin 2\pi ft\) & Yields the instantaneous current $i$ where the current varies sinusoidally with time \\
+
+  \notabene{The instantaneous voltages across the three elements (resistor, inductor, conductor) have the following phase relations to the instantaneous current $i$:
+    \begin{itemize}
+    \item The instantaneous voltage $\Delta v_R$ across the resistor is \textit{in phase} with the instantaneous current
+      \item The instantaneous voltage $\Delta v_L$ across the inductor \textit{leads} the current by \SI{90}{\degree}
+        \item The instantaneous voltage $\Delta v_C$ across the capacitor \textit{lags} the current by \SI{90}{\degree}
+    \end{itemize}}
+    
+  \(\Delta v=\Delta v_R+\Delta v_C+\Delta v_L\) & The net instantaneous voltage $\Delta v$ supplied by the AC source equals the sum of the instantaneous voltages across the separate elements, however an AC voltmeter will not measure the values as this sum, because the voltages of the elements are not in phase \\
+
+  \notabene{To account for the different phases of voltage drops, a technique in which the voltage across each element is represented with a rotating vector called a \textit{phasor} (a portmanteau of phase vector). A \textit{phasor diagram} represents the circuit voltage given by the expression $\Delta v=\Delta V_{max}\sin\left(2\pi ft+\phi\right)$ where $\Delta V_{max}$ is the maximum voltage (the magnitude of the phasor) and $\phi$ is the angle between the phasor and the positive $x$-axis when $t=0$. The phasor rotates at a constant frequency $f$ so that its projection along the $y$-axis is the instantaneous voltage in the circuit}
+
+  \(\Delta V_{max}=\displaystyle\sqrt{\Delta V_R^2+\left(\Delta V_L-\Delta V_C\right)^2}\) & Yields the phasor $\Delta V_{max}$ which represents the maximum voltage across the circuit where the phasor of the voltage of each element is the maximum voltage for that element \\
+  \(\tan\phi=\displaystyle\frac{\Delta V_L-\Delta V_C}{\Delta V_R}=\frac{X_L-X_C}{R}\) & Yields the phase angle $\phi$ between the maximum voltage and current where the phasor of the voltage of each element is the maximum voltage for that element \\
+  \(\Delta V_{max}=I_{max}\displaystyle\sqrt{R^2+\left(X_L-X_C\right)^2}=I_{max}Z\) & An alternate form of the equation for $\Delta V_{max}$ written in the form of Ohm's law $\left(\Delta V=IR\right)$ where $Z$ is the impedance of the circuit \\
+  \(Z\equiv\displaystyle\sqrt{R^2+\left(X_L-X_C\right)^2}\) & Yields the impedance $Z$ of the circuit \\
+
+  \tablesubsection{Power in an AC Circuit}
+  
+  \notabene{When the current increases in one direction in an AC circuit, charge accumulates on the capacitor and a voltage drop appears across it. When the voltage reaches its maximum value, the energy stored in the capacitor is $PE_C=\frac{1}{2}C\left(\Delta V_{max}\right)^2$. However, when the current reverses direction, the charge leaves the capacitor and returns to the voltage source. During one-half of each cycle the capacitor is being charged, and during the other the charge is returning to the voltage source. Therefore, the average power supplied by the source is zero. In other words \textit{no power losses occur in a capacitor in an AC circuit}. A similar situation occurs within an inductor according to the equation $PE_L=\frac{1}{2}LI^2_{max}$}
+
+  \(P_{av}=I^2_{rms}R\) & Yields the average power delivered to a resistor in an $RLC$ circuit \\
+  \(P_{av}=I_{rms}\Delta V_{R,rms}\) & An alternate equation for the average power loss in an AC circuit where $\Delta V_{R,rms}=\Delta V_{rms}\cos\phi$ \\
+  \(P_{av}=I_{rms}\Delta V_{rms}\cos\phi\) & Yields the average power delivered by a generator in an AC circuit where $\cos\phi$ is the \textit{power factor}, the phase difference between the source voltage and the resulting current \\
+
+  \tablesubsection{Resonance in a Series $RLC$ Circuit}
+
+  \(I_{rms}=\displaystyle\frac{\Delta V_{rms}}{Z}=\frac{\Delta V_{rms}}{\sqrt{R^2+\left(X_L-X_C\right)^2}}\) & Yields the general form of rms current in a series $RLC$ circuit. If the frequency is varied, the current has its maximum value when the impedance has its minimum value, which occurs when $X_L=X_C$, reducing the impedance to $Z=R$. The frequency at which this happens $f_0$ is the resonance frequency of the circuit \\
+  \(f_0=\displaystyle\frac{1}{2\pi\sqrt{LC}}\) & Yields the resonance frequency $f_0$ of an ideal series $RLC$ circuit \\
+
+  \tablesubsection{The Transformer}
+  
+  \notabene{In its simplest form, an AC transformer|which changes the voltage of an AC circuit|consists of two coils of wire wound around a core of soft iron. The coil connected to the input AC voltage source has $N_1$ turns and is called the primary winding, or just \textit{primary}. The other coil is connected to a resistor $R$ with $N_2$ turns and is the \textit{secondary}. The purpose of the iron core is to increase the magnetic flux and provide a medium in which nearly all the flux through one coil passes through the other}
+
+  \(\Delta V_1=-N_1\displaystyle\frac{\Delta\Phi_B}{\Delta t}\) & Yields the induced voltage when an input AC voltage $\Delta V_1$ is applied to the primary where $\Phi_B$ is the magnetic flux through each turn \\
+  \(\Delta V_2=-N_2\displaystyle\frac{\Delta\Phi_B}{\Delta t}\) & Yields the voltage across the secondary coil if we assume no flux leaks from the iron core, thus the flux of the primary equals the flux of the secondary \\
+  \(\Delta V_2=\displaystyle\frac{N_2}{N_1}\Delta V_1\) & Relates $V_1$ to $V_2$ because the term $\frac{\Delta\Phi_B}{\Delta t}$ can be algebraically eliminated \\
+
+  \notabene{When $N_2>N_1$, $\Delta V_2>\Delta V_1$ and the transformer is referred to as a \textit{step-up transformer}. When $N_2<N_1$, $\Delta V_2<\Delta V_1$ and the transformer is a \textit{step-down transformer}}
+
+  \(I_1\Delta V_1=I_2\Delta V_2\) & The power output of the primary equals the power output at the secondary \\
+
+  \tablesubsection{Properties of Electromagnetic Waves}
+
+  \(c=\displaystyle\frac{1}{\sqrt{\mu_0\epsilon_0}}=2.99792\e{8}\)\,\si{\meter\per\second} & Yields the speed of light where $\mu_0=4\pi\e{-7}$\,\si{\newton\second\squared\per\coulomb\squared} is the permeability constant of vacuum and $\epsilon_0=8.85419\e{-12}$\,\si{\coulomb\squared\per\newton\per\meter\squared} is the permittivity of free space \\
+  \(c=\displaystyle\frac{E}{B}\) & A relationship for electromagnetic waves between the magnitude of the electric field $E$ and the magnitude of the magnetic field $B$ \\
+  \(I=\displaystyle\frac{E_{max}B_{max}}{2\mu_0}\) & Yields the intensity $I$ of the wave, the average rate at which energy passes through an area perpendicular to the direction of travel of a wave (the average power per unit area) \\
+  \(I=\displaystyle\frac{E^2_{max}}{2\mu_0c}=\frac{c}{2\mu_0}B^2_{max}\) & An alternate form of the previous equation where $E_{max}=cB_{max}=\frac{B_{max}}{\sqrt{\mu_0\epsilon_0}}$ \\
+  \(p=\displaystyle\frac{U}{c}\) (complete absorption) & Yields the total momentum $\vec{p}$ delivered to a surface struck by light if the surface perfectly absorbs the energy where $U=IA\Delta t$ where $A$ is the area of the object struck by the light \\
+  \(p=\displaystyle\frac{2U}{c}\) (complete reflection) & Yields the total momentum delivered to a surface struck by light if the surface perfectly reflects the energy \\
+  \(c=f\lambda\) & Relates the speed $c$ with which all electromagnetic waves travel through free space with frequency $f$ and wavelength $\lambda$ \\
+
+  \notabene{Light is an electromagnetic wave and transports \textit{energy} and \textit{momentum}}
+  \notabene{Some properties of electromagnetic waves:
+    \begin{itemize}
+      \item Electromagnetic waves travel at the speed of light
+      \item Electromagnetic waves are transverse waves because the electric and magnetic fields are perpendicular to the direction of propagation of the wave and to each other
+      \item The ratio of the electric field to the magnetic field in an electromagnetic wave equals the speed of light
+      \item Electromagnetic waves carry both energy and momentum, which can be delivered to a surface
+    \end{itemize}}%list in notabene command
+
+  \tablesubsection{The Doppler Effect for Electromagnetic Waves}
+
+  \(f_O\approx f_S\displaystyle\left(1\pm\frac{u}{c}\right)\) & Yields the observed frequency $f_O$ where $f_S$ is the frequency emitted by the source, $u$ is the \textit{relative speed} of the observer and the source and $c$ is the speed of light in a vacuum. Note that this equation is only valid if $u\lll c$ \\
+
+\end{longtable}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:

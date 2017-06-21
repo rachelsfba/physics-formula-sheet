@@ -1,0 +1,57 @@
+\begin{longtable}{p{0.5\textwidth} p{0.5\textwidth}}
+  \tablesection{Chapter 20: Induced Voltages \& Inductance}
+  \tablesubsection{Induced emf \& Magnetic Flux}
+
+  \(\Phi_B\equiv B_{\perp}A=BA\cos\theta\) & Yields the magnetic flux $\Phi_B$ through a loop of wire with area $A$ where $B_{\perp}$ is the component of a uniform magnetic field $\vec{B}$ perpendicular ($\perp$) to the plane of the loop, and $\theta$ is the angle between $\vec{B}$ and the normal (perpendicular) to the plane of the loop in webers \si{\weber} \\
+
+  \notabene{The value of the magnetic flux is proportional to the total number of lines passing through the loop}
+  \notabene{Current can be induced by a changing magnetic field. A static magnetic field does not produce a current unless the circuit through which the current might flow is moving relative to the magnetic field. In essence, an induced emf (electromotive force) is produced in a circuit by a changing magnetic field}
+
+  \tablesubsection{Faraday's Law of Induction \& Lenz's Law}
+
+  \(\varepsilon=-N\displaystyle\frac{\Delta\Phi_B}{\Delta t}\) & Faraday's Law; yields the average emf $\varepsilon$ (electromotive force) if a circuit contains $N$ tightly wound loops and the magnetic flux through each loop changes by the amount $\Delta\Phi_B$ during the time interval $\Delta t$ \\
+
+  \notabene{\textit{Lenz's Law}: The current caused by the induced emf travels in the direction that creates a magnetic field with flux opposing the change in the original flux through the circuit}
+
+  \tablesubsection{Motional emf}
+
+ \(\Delta V=E\ell=\vec{B}\ell v\) & Yields the electric potential $\Delta V$ across the ends of a conductor of length $\ell$ moving through a magnetic field $\vec{B}$ with velocity $\vec{v}$ where an emf of $\vec{B}\ell v$ is induced between the opposite ends of the conductor, causing free electrons to accumulate in one end (the ``downward'' end) of the conductor by the downward magnetic force $qv\vec{B}$ which is opposed by the upward electric force $qE$ where $E$ is the magnitude of the electric field $\vec{E}$ produced by the charge $q$ in the bottom end of the conductor  \\
+ \(\Delta\Phi_B=\vec{B}A=\vec{B}\ell\Delta\vec{x}\) & Yields the increase in magnetic flux $\Delta\Phi_B$ in a system consisting of a circuit with a conductor length $\ell$ which can slide horizontally in the $x$-direction, thus changing the length and area of the circuit where $B$ is a uniform and constant magnetic field applied perpendicularly to the plane of the circuit, $A=\ell\Delta\vec{x}$ is the area, and $\Delta\vec{x}$ is the horizontal distance traversed by the conductor \\
+ \(\abs{\varepsilon}=\displaystyle\frac{\Delta\Phi_B}{\Delta t}=B\ell\frac{\Delta\vec{x}}{\Delta t}=B\ell\vec{v}\) & Yields the magnitude of the induced emf|the motional emf|of the system described in the previous equation \\
+ \(I=\displaystyle\frac{\abs{\varepsilon}}{R}=\frac{B\ell\vec{v}}{R}\) & Yields the current of the circuit in the system described in the previous equation \\
+
+  \notabene{\textit{Motional emf} is the emf induced in a conductor moving through a magnetic field. Motional emf is the working principle of a \href{https://en.wikipedia.org/wiki/Railgun}{railgun}}
+
+  \tablesubsection{Generators}
+
+  \(\varepsilon=2\vec{B}\ell\vec{v}_{\perp}=2\vec{B}\ell\vec{v}\sin\theta\) & Yields the total induced emf in an alternating-current (AC) generator consisting of a rectangular loop of wire $ABCD$ where sides $BC$ and $DA$ are parallel to the axis of rotation and sides $AB$ and $CD$ are perpendicular to the axis of rotation (in the formula, $B$ is the magnitude of the magnetic field in which the wire rotates). Because the magnetic force $\left(qvB\right)$ on the charges in wires $AB$ and $CD$ is not along the lengths of the wires (the force on the electrons in these wires is perpendicular to the wires), an emf is not generated in these sections of wire, instead an emf is generated only in sections $BC$ and $AD$. At any instant, wire $BC$ and $DA$ have a velocity $\vec{v}$ at an angle $\theta$ with the magnetic field (note that the component of velocity parallel to the field has no effect on the charges in the wire) which generates am emf of $B\ell v_{\perp}$ where $\ell$ is the length of the wire and $v_{\perp}=\vec{v}\sin\theta$ is the component of velocity perpendicular to the field \\
+  \(\varepsilon=2\vec{B}\ell\left(\displaystyle\frac{a}{2}\right)\vec{\omega}\sin\vec{\omega} t=\vec{B}\ell a\vec{\omega}\sin\vec{\omega} t\) & Yields the total induced emf in the system described above where $a$ is the length of sides $AB$ and $CD$ and $\vec{\omega}$ is the constant angular speed of the loop (every point on the wires $BC$ and $DA$ have the same $\vec{\omega}$) where $\theta=\vec{\omega} t$ and $\vec{v}=r\vec{\omega}=\left(\frac{a}{2}\right)\vec{\omega}$ \\
+  \(\varepsilon=NBA\vec{\omega}\sin\vec{\omega} t\) & Yields the total induced emf of the system described above where $N$ is the number of coils in the loop $ABCD$ with area $A=\ell a$. This result shows that the emf varies sinusoidally with time \\
+  \(\varepsilon_{max}=NBA\vec{\omega}\) & Yields the maximum emf in a system described in the previous equation \\
+
+  \notabene{In its simplest form, an \textit{alternating current} generator consists of a wire loop rotated in a magnetic field by some external means}
+  \notabene{A \textit{direct current} generator is similar to an alternating current generator except that the contacts to the rotating loop are made by a split ring, a commutator. In this design, the output voltage always has the same polarity}
+
+  \tablesubsection{Self-Inductance}
+
+  \(\varepsilon\equiv -L\displaystyle\frac{\Delta I}{\Delta t}\) & Yields the self-induced emf where $L$ is a proportionality constant called the \textit{inductance} of the device \\
+  \(L=N\displaystyle\frac{\Delta\Phi_B}{\Delta I}=\frac{N\Phi_B}{I}\) & Yields the inductance of a device in henries $\si{\henry} = \si{\volt\second\per\ampere}$ \\
+  \(L=\displaystyle\frac{N\Phi_B}{I}=\frac{\mu_0N^2A}{\ell}\) & Yields the inductance of a solenoid with cross-sectional area $A$ where $N$ is the number of coils and $\ell$ is the length of the wire \\
+  \(L=\mu_0\displaystyle\frac{\left(n\ell\right)^2}{\ell}A=\mu_0n^2A\ell=\mu_0n^2V\) & An alternate form of the equation above where $V=A\ell$ the volume of the solenoid and $N=n\ell$ \\
+
+  \notabene{Consider a circuit consisting of a switch, a resistor of resistance $R$ and a source of emf. When the switch is closed, the current doesn't immediately change from zero to its maximum value, $\frac{\varepsilon}{R}$, instead increasing with time. The magnetic flux through the circuit due to this current also increases. The increasing flux induces an emf in the circuit that opposes the change in magnetic flux in the direction of the lines indicating a power source in a circuit diagram due to Lenz's Law. As the magnitude of the current increases, the rate of increase lessens and the induce emf decreases, resulting in a gradual change in the current. For the same reason, when the switch is opened the current does not immediately fall to zero. This effect is called \textit{self-induction} because the changing flux through the circuit rises from the circuit itself}
+
+  \tablesubsection{RL Circuits}
+
+  \(\displaystyle\varepsilon_L=-L\frac{\Delta I}{\Delta t}\) & Yields the emf of a battery in an a system consisting of an inductor connected to the battery where $IR=0$, the emf of the battery equals the back emf generated in the coil. In this instance, we can interpret $L$ as a measure of opposition to the rate of change of current \\
+  \(\tau=\displaystyle\frac{L}{R}\) & Yields the time constant $\tau$ for an $RL$ circuit as the time required for the current in the circuit to reach \SI{63.2}{\percent} of its final value $\frac{\varepsilon}{R}$ \\
+  \(I=\displaystyle\frac{\varepsilon}{R}\left(1-e^{\frac{-t}{\tau}}\right)\) & Yields the current in an $RL$ circuit \\
+
+  \tablesubsection{Energy Stored in a Magnetic Field}
+
+  \(PE_L=\frac{1}{2}LI^2\) & Yields the potential energy stored by an inductor. This equation is similar to the expression for the energy stored in a charged capacitor $PE_C=\frac{1}{2}C\left(\Delta v\right)^2$ \\
+\end{longtable}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:

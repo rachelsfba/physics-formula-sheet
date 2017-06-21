@@ -1,0 +1,73 @@
+\begin{longtable}{p{0.5\textwidth} p{0.5\textwidth}}
+  \tablesection{Chapter 7: Rotational Motion \& The Law of Gravity}
+  \tablesubsection{Angular Speed \& Angular Acceleration}
+
+  \(\theta = \frac{s}{r}\) & Yields angular position from the positive $x$-axis where $s$ is the corresponding displacement along the circular arc from the positive $x$-axis and $r$ is the radius of the circle, measured in radians \\
+  \(s = 2\pi r\) & Yields the displacement along the circular arc from the positive $x$-axis where $r$ is the radius of the circle formed by the arc \\
+  \(\Delta\theta = \theta_f - \theta_i\) & Yields angular displacement \\
+  \(\vec{\omega}_{avg}\equiv\displaystyle\frac{\Delta\theta}{\Delta t}\) & Yields average angular velocity $\vec{\omega}_{avg}$ in radians per second \si{\radian\per\second} \\
+  \(\vec{\omega}_{ins}\equiv\displaystyle\lim_{\Delta t\to 0}\frac{\Delta\theta}{\Delta t}\) & Yields instantaneous angular speed \\
+  \(\vec{\alpha}_{avg}\equiv\displaystyle\frac{\Delta\vec{\omega}}{\Delta t}\) & Yields the average angular acceleration $\vec{\alpha}_{avg}$ of an object in \si{\radian\per\second\squared} \\
+  \(\vec{\alpha}_{ins}\equiv\displaystyle\lim_{\Delta t\to 0}\frac{\Delta\vec{\omega}}{\Delta t}\) & Yields instantaneous angular acceleration \\
+
+  \notabene{$\vec{\omega}$ is considered to be positive when $\theta$ is increasing (i.e, counterclockwise motion) and negative when $\theta$ is decreasing (clockwise motion). When angular speed is constant, the instantaneous angular speed is equal to the average angular speed}
+  \notabene{When a rigid object rotates about a fixed axis, every portion of the object has the same angular speed and acceleration}
+  \notabene{The linear quantities $\Delta\vec{x}$ (displacement), $\vec{v}$ (velocity), and $\vec{a}$ (acceleration) have analogues in the rotational quantities $\Delta \theta$, $\vec{\omega}$, and $\vec{\alpha}$, respectively. Angular quantities in physics are generally expressed in radians.}
+  
+  \tablesubsection{Rotational Motion Under Constant Angular Acceleration}
+
+  \begin{tabular}{l l}
+    \(\vec{v}=\vec{v}_i+\vec{a}t\) & \(\vec{\omega}=\vec{\omega}_i+\vec{\alpha}t\) \\
+    \(\Delta\vec{x}=\vec{v}_it+\frac{1}{2}\vec{a}t^2\) & \(\Delta\theta=\vec{\omega}_it+\frac{1}{2}\vec{\alpha}t^2\) \\
+    \(\vec{v}=\sqrt{\vec{v}_i^2+2\vec{a}\Delta\vec{x}}\) & \(\vec{\omega}^2=\vec{\omega}_i^2+2\vec{\alpha}\Delta\theta\) \\
+  \end{tabular} & Relates linear and angular formul\ae \\
+
+  \tablesubsection{Relations Between Angular \& Linear Quantities}
+
+  \(\vec{v}_t = r\vec{\omega}\) & Yields tangential velocity, the instantaneous linear velocity of an object moving with angular speed $\vec{\omega}$ about a point with radius $r$ in \si{\meter\per\second} \\
+  \(\Delta\vec{v}_t = r\Delta\vec{\omega}\) & Yields the change in tangential velocity \\
+  \(\vec{a}_t = r\vec{\alpha}\) & Yields tangential acceleration, the instantaneous linear acceleration of an object moving with angular acceleration $\vec{\alpha}$ about a point with radius $r$ in \si{\meter\per\second\squared} \\
+  
+  \tablesubsection{General Angular Formul\ae}
+
+  \(\Delta\vec{\omega} = \vec{\alpha} t\) & \\
+  \(\vec{\omega}_f = \vec{\omega}_i+\vec{\alpha} t\) & \\
+  \(\bar{\vec{\omega}} = \frac{1}{2}\left(\vec{\omega}_i + \vec{\omega}_f\right)\) & This can be approximated as \(\displaystyle\frac{\Delta\theta}{\Delta t}\) \\
+  \(\Delta\theta = \vec{\omega}_it + \frac{1}{2}\vec{\alpha} t^2\) & \\
+  \(\Delta\theta = \bar{\vec{\omega}}t\) & \\
+  \(\Delta\theta = \frac{1}{2}\left(\vec{\omega}_i + \vec{\omega}_f\right)t\) & \\
+  \(\vec{\omega}_f^2 = \vec{\omega}_i^2 + 2\vec{\alpha}\Delta\theta\) & \\
+  \(t = \displaystyle\sqrt{\frac{2\Delta\theta}{\vec{\alpha}}}\) & If $\vec{\omega}_i=0$ \\
+
+  \notabene{See \textit{Appendix I} on page \pageref{ssec:angular-formulae} for miscellaneous information involving angular quantities}
+
+  \tablesubsection{Translational Motion of a Rotating Object}
+
+  \(s = r\theta\) & Yields arc length \\
+  \(\vec{v}_{cm} = r\vec{\omega}\) & Yields the translational velocity of the center of mass of an object $\vec{v}_{cm}$ \\
+  \(\vec{v}_{cm} > r\vec{\omega}\) & If this condition is met, the object is slipping \\
+  \(\vec{v}_{cm} < r\vec{\omega}\) & If this condition is met, the object is rolling and slipping \\
+  \(\vec{a}_{cm} = r\vec{\alpha}\) & Yields the translational acceleration of the center of mass of an object $\vec{a}_{cm}$ \\
+
+  \tablesubsection{Centripetal Acceleration}
+
+  \(\vec{a}_c = \displaystyle\frac{\vec{v}^2}{r}\) & Yields centripetal acceleration, the acceleration towards the center for an object moving about a point $O$ \\ %that's an 'oh'
+  \(\vec{a}_c = r\vec{\omega}^2\) & An alternate definition for centripetal acceleration \\
+  \(\vec{a} = \displaystyle\sqrt{\vec{a}_t^2 + \vec{a}_c^2}\) & Yields the total acceleration of a system experiencing both tangential acceleration $\vec{a}_t$ and centripetal acceleration $\vec{a}_c$ \\
+  \(\vec{F}_c = m\vec{a}_c = m\displaystyle\frac{\vec{v}^2}{r}\) & Yields the centripetal force. The \textit{centrifugal} force is a phantom force which does not exist but is ``experienced'' due to the conservation of momentum in a situation where there is insufficient centripetal force to prevent an object from escaping the centre \\
+
+  \tablesubsection{Newtonian Gravitation}
+
+  \(\vec{F} = G\displaystyle\frac{m_1m_2}{r^2}\) & Yields the force due to gravity acting between two particles of mass $m_1$ and $m_2$ where $G=\SI{6.673e-11}{\meter\cubed\per\kilo\gram\per\second\squared}$ the constant of universal gravitation. The gravitational force is always attractive. The gravitational force is an example of an inverse-square law, in that it varies as one over the square of the separation of the particles \\
+  \(PE = -G\displaystyle\frac{M_Em}{r}\) & Gravitational Potential Energy where $M_E$ and $R_E$ are the mass and radius of the earth, respectively, and $r>R_E$ \\
+
+  \tablesubsection{Escape Velocity}
+
+  \(v_{esc} = \displaystyle\sqrt{\frac{2GM_E}{R_E}}\) & Yields the magnitude of escape velocity for the Earth. Replace $M_E$ and $R_E$ with the appropriate mass and velocity of another object to determine the escape velocity of that object \\
+
+  \notabene{Kepler's Laws of Planetary Motion can be found on page \pageref{ssec:keplers-laws}.}
+\end{longtable}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:
