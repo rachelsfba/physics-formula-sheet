@@ -23,7 +23,6 @@
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning, decorations.pathreplacing,calc}%tikz libraries required for graphics
 \usepackage{tkz-euclide}%programmatically labelling angles in tikz
 \usepackage{amssymb}%additional math symbols like 'therefore'
-\usetkzobj{all}%from tkz-euclide
 \usepackage{pgfplots}%for graphing functions in tikz
 \usepgfplotslibrary{fillbetween}%for filling curve area in pgfplots
 \usepackage{authblk}%changes the way \author{} works, adds \affiliation{} & similar
@@ -82,7 +81,7 @@
   \ensuremath{\left|#1\right|}
 }
 \newcommand{\lcp}{%provides shareable doc link
-Permalink: \url{https://github.com/omattei/PhysFormulaSheet/releases}
+Permalink: \url{https://github.com/obeijaflor/physics-formula-sheet}
 }
 
 \newcommand{\tablesection}[1]{%new section in 2-column table
@@ -120,14 +119,14 @@ Permalink: \url{https://github.com/omattei/PhysFormulaSheet/releases}
 \author{Charles German}\affil{Bridgewater College, \email{cgerman@eagles.bridgewater.edu}}
 \author{Rachel Shaw}\affil{University of Virginia, \email{rcs8vq@virginia.edu}}
 \author{David Robie}\affil{Virginia Commonwealth University, \email{robiedr@mymail.vcu.edu}} %update or delete as desired
-\date{Last Updated: 21 June 2017}%needs to be manually set on sharelatex since every webpage reload is a recompile (I think)
+\date{Last Updated: 5 August 2021}%needs to be manually set on sharelatex since every webpage reload is a recompile (I think)
 % END TITLE SETTINGS
 
 % MISC DOCUMENT SETTINGS
 \setlength\parindent{0pt}%removes paragraph indentation
 \setlength\parskip{0em}%remove line spacing for table of contents
 
-% \pgfplotsset{compat=1.11}%something about pgfplots compatibility recommended by the pdflatex compiler
+ \pgfplotsset{compat=1.17}%something about pgfplots compatibility recommended by the pdflatex compiler
 % END MISC DOCUMENT SETTINGS
 
 % MISC TRIGONOMETRY STUFF

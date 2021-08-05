@@ -9,6 +9,10 @@
 *.log
 *.out
 *.toc
+*.fdb_latexmk
+*.fls
+*.synctex(busy)
+*.synctex.gz
 main.pdf
 
 # pandoc-converted README
